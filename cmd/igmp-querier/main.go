@@ -30,13 +30,13 @@ func main() {
 
 	igmpQuery := []byte{
 		0x11,
-		0x0A,
-		0x0e,
-		0xf4,
-		224,
-		0,
-		0,
-		1,
+		0x64,
+		0xee,
+		0x9b,
+		0x00,
+		0x00,
+		0x00,
+		0x00,
 	}
 
 	if queryVersion == 3 {
@@ -72,4 +72,3 @@ func usage() {
 	fmt.Printf("\n")
 	os.Exit(1)
 }
-
